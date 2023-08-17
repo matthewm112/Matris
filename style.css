@@ -1,0 +1,55 @@
+/* specifically styling div classed as container*/
+.container {
+  /* Allows the grid and the next piece section to be on the same plane*/
+  display: flex;
+}
+
+
+.grid {
+    /* each square will be 20 by 20 piexels,*/
+    width: 200px;  /* width 200 bc grid is 10 squares long*/
+    height: 400px; 
+    background-color: black;
+    text-align: center;
+    border: 10px solid cyan;
+
+    /* flex makes squares stacked in a line, wrap specifiies they wrap over eachotehr*/
+    display: flex;
+    flex-wrap: wrap;
+
+
+    /* puts a space between the two grids*/
+    margin-right: 20px;
+}
+
+/* specifically styling divs inside grid aka individual squres */
+.grid div {
+/* setting size of a square */
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+/* styling grid for next piece*/
+.grid-next {
+    /* each square will be 20 by 20 piexels,*/
+    width: 80px;  
+    height: 80px; 
+    background-color: black;
+    text-align: center;
+
+    /* flex makes squares stacked in a line, wrap specifiies they wrap over eachotehr*/
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid cyan;
+    
+    margin-bottom: 20px;
+}
+
+.grid-next div {
+  height: 20px;
+  width: 20px;
+}
